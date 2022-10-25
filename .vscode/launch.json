@@ -1,0 +1,42 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "INTEFRATION_TEST",
+			"type": "dart",
+			"request": "launch",
+			"program": "./integration_test/",
+			"args": [
+				"--flavor",
+				"dev"
+			]
+		},
+		{
+			"name": "UNIT_TESTS",
+			"type": "dart",
+			"request": "launch",
+			"program": "./test/"
+		},
+		{
+			"name": "PROD",
+			"program": "lib/main.dart",
+			"request": "launch",
+			"type": "dart",
+			"args": [
+				"--release",
+				"--flavor",
+				"prod"
+			]
+		},
+		{
+			"name": "DEV",
+			"program": "lib/main.dart",
+			"request": "launch",
+			"type": "dart",
+			"args": [
+				"--flavor",
+				"dev"
+			]
+		}
+	]
+}
